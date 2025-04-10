@@ -1,0 +1,957 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Hammi Digital Lab - Web Agency</title>
+
+    <!-- 
+    - favicon
+  -->
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="assets/images/favicon_io/apple-touch-icon.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="assets/images/favicon_io/favicon-32x32.png" />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="assets/images/favicon_io/favicon-16x16.png" />
+    <link rel="manifest" href="assets/images/favicon_io/site.webmanifest" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/animate.css" />
+
+    <link rel="stylesheet" href="./assets/css/jquery-ui.min.css" />
+    <link rel="stylesheet" href="./assets/css/aos.css" />
+    <link rel="stylesheet" href="./assets/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="./assets/css/owl.theme.default.min.css" />
+
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
+      rel="stylesheet" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #HEADER
+  -->
+
+    <header class="header" data-header>
+      <div class="container">
+        <a href="/#accueil" class="logo">
+          <img src="assets/images/logo.png" alt="logo" width="200" />
+        </a>
+
+        <nav class="navbar" data-navbar>
+          <div class="wrapper">
+            <a href="#" class="logo">Hammi Digital Lab</a>
+
+            <button
+              class="nav-close-btn"
+              aria-label="close menu"
+              data-nav-toggler>
+              <ion-icon name="close-outline" aria-hidden="true"></ion-icon>
+            </button>
+          </div>
+
+          <ul class="navbar-list">
+            <li class="navbar-item">
+              <a href="#accueil" class="navbar-link" data-nav-link>Accueil</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#apropos" class="navbar-link" data-nav-link>À Propos</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#services" class="navbar-link" data-nav-link>Services</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="#realisations" class="navbar-link" data-nav-link
+                >Réalisations</a
+              >
+            </li>
+
+            <li class="navbar-item">
+              <a href="#process" class="navbar-link" data-nav-link>Processus</a>
+            </li>
+
+            <li class="navbar-item">
+              <a href="contact.html" class="navbar-link" data-nav-link
+                >Contactez-nous</a
+              >
+            </li>
+          </ul>
+        </nav>
+
+        <button class="nav-open-btn" aria-label="open menu" data-nav-toggler>
+          <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
+        </button>
+
+        <a href="contact.html" class="btn btn-primary has-before has-after">
+          Consultation Gratuite
+        </a>
+
+        <div class="overlay" data-nav-toggler data-overlay></div>
+      </div>
+    </header>
+
+    <main>
+      <article>
+        <!-- 
+        - #HERO
+      -->
+        <section class="section hero" id="accueil" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h3 class="h3 hero-title text-highlight">
+                <span class="test-textillate">
+                  <ul class="texts">
+                    <li><span>Augmentez vos ventes</span></li>
+                    <li><span>Automatisez vos processus </span></li>
+                    <li><span>Améliorez l'engagement de vos clients </span></li>
+                  </ul>
+                </span>
+              </h3>
+              <h2 class="h2 hero-title">
+                <span class="has-before"> Des Sites Web </span> qui Boostent
+                Votre Business
+              </h2>
+
+              <p class="hero-text">
+                Boostez votre présence en ligne avec nos solutions web. <br />
+                Nos sites web personnalisés et designs soigné renforcent votre
+                visibilité et simplifient vos ventes.
+              </p>
+
+              <div class="wrapper">
+                <a
+                  href="#services"
+                  class="btn btn-primary has-before has-after">
+                  Explorez nos Services
+                </a>
+                <a
+                  class="hero-btn"
+                  aria-label="pixology promo"
+                  href="tel:00 216 54 091 163">
+                  <ion-icon name="call" aria-hidden="true"></ion-icon>
+
+                  <span class="span">Appelez-nous</span>
+                </a>
+              </div>
+
+              <ul class="social-list">
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61574885107269"
+                    target="_blank"
+                    class="social-link"
+                    style="--color: hsl(241, 77%, 63%)">
+                    <ion-icon name="logo-facebook"></ion-icon>
+
+                    <span class="span">Facebook</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.instagram.com/hammi.digital.lab/"
+                    target="_blank"
+                    class="social-link"
+                    style="--color: hsl(0, 100%, 50%)">
+                    <ion-icon name="logo-instagram"></ion-icon>
+
+                    <span class="span">Instagram</span>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://wa.me/0021654091163"
+                    target="_blank"
+                    class="social-link"
+                    style="--color: hsl(142, 70%, 45%)">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+
+                    <span class="span">Whatsapp</span>
+                  </a>
+                </li>
+              </ul>
+            </div>
+
+            <figure class="hero-banner animation-float">
+              <img
+                src="./assets/images/hero.jpg"
+                width="794"
+                height="637"
+                alt="hero banner"
+                class="hero-image w-100" />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #apropos
+      -->
+
+        <section class="section feature" id="apropos" aria-label="feature">
+          <div class="container">
+            <figure
+              class="feature-banner"
+              data-aos="fade-up"
+              data-aos-delay="100">
+              <img
+                src="./assets/images/apropos.jpg"
+                width="582"
+                height="585"
+                loading="lazy"
+                alt="feature banner"
+                class="w-100" />
+            </figure>
+
+            <div
+              class="feature-content"
+              data-aos="fade-up"
+              data-aos-delay="200">
+              <p class="section-subtitle has-before">À-Propos De Nous</p>
+
+              <h2 class="h2 section-title">
+                Pourquoi Nous <span class="has-before"> Choisir</span>
+              </h2>
+
+              <ul class="feature-list">
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 174, 77%, 50%">
+                      <ion-icon
+                        name="people-sharp"
+                        aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">
+                        Un partenaire qui veille sur votre site
+                      </h3>
+
+                      <p class="card-text">
+                        On s’occupe de la maintenance, de la sécurité, de
+                        l’hébergement et du contenu pour que votre site reste
+                        fiable et à jour.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 241, 77%, 63%">
+                      <ion-icon
+                        name="rocket-sharp"
+                        aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">
+                        Des offres flexibles adaptées à tous les budgets
+                      </h3>
+
+                      <p class="card-text">
+                        On propose des solutions adaptées à tous les besoins :
+                        du site prêt à l’emploi à la création sur-mesure.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+
+                <li>
+                  <div class="feature-card">
+                    <div class="card-icon" style="--color: 343, 98%, 60%">
+                      <ion-icon
+                        name="star-outline"
+                        aria-hidden="true"></ion-icon>
+                    </div>
+
+                    <div>
+                      <h3 class="h3 card-title">
+                        Des solutions personnalisées
+                      </h3>
+
+                      <p class="card-text">
+                        On développe des fonctionnalités et modules sur-mesure
+                        pour répondre aux spécificités de votre activité.
+                      </p>
+                    </div>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <!-- 
+        - #services
+      -->
+
+        <section class="section service" id="services" aria-label="service">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Services</p>
+
+            <h2 class="h2 section-title text-center">
+              Nos Solutions Pour Vos <span class="has-before">Besoins</span>
+            </h2>
+
+            <ul class="filter-list">
+              <li>
+                <button class="filter-btn active" data-filter-btn>
+                  Développement Web
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn>
+                  Maintenance & Support
+                </button>
+              </li>
+
+              <li>
+                <button class="filter-btn" data-filter-btn>
+                  Marketing Digital
+                </button>
+              </li>
+            </ul>
+
+            <ul class="grid-list active">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card" style="--color: 174, 77%, 50%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="cart-outline"
+                      aria-hidden="true"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        color: #1de2ce;
+                      "></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Développement de Solutions E-commerce
+                    </a>
+                  </h3>
+                  <h5>
+                    boutiques en ligne modernes, simples à gérer et optimisées
+                    pour la conversion
+                  </h5>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card" style="--color: 17, 100%, 68%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="link-outline"
+                      aria-hidden="true"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        color: #ff8a5c;
+                      "></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Intégration des Modules</a>
+                  </h3>
+                  <h5>systèmes de réservation, blog, formulaires avancés…</h5>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card" style="--color: 267, 76%, 57%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="globe-outline"
+                      aria-hidden="true"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        color: #893ee5;
+                      "></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Conception de Sites Vitrine
+                    </a>
+                  </h3>
+                  <h5>
+                    présentez votre activité de manière claire et impactante,
+                    avec un site rapide et responsive.
+                  </h5>
+                </div>
+              </li>
+            </ul>
+
+            <ul class="grid-list">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card" style="--color: 174, 77%, 50%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="brush-outline"
+                      aria-hidden="true"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        color: #1de2ce;
+                      "></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Hébergement</a>
+                  </h3>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card" style="--color: 267, 76%, 57%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="card-outline"
+                      aria-hidden="true"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        color: #893ee5;
+                      "></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">
+                      Mises à jour hebdomadaires</a
+                    >
+                  </h3>
+                </div>
+              </li>
+              <li data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card" style="--color: 17, 100%, 68%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="newspaper-outline"
+                      aria-hidden="true"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        color: #ff8a5c;
+                      "></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"> Restauration rapide </a>
+                  </h3>
+                  <h5>en cas de problème ou de piratage</h5>
+                </div>
+              </li>
+            </ul>
+            <ul class="grid-list">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card" style="--color: 28, 80%, 58%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="browsers-outline"
+                      aria-hidden="true"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        color: #ff8a5c;
+                      "></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Pages de vente & landing pages
+                    </a>
+                  </h3>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card" style="--color: 267, 76%, 57%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="megaphone-outline"
+                      aria-hidden="true"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        color: #893ee5;
+                      "></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title"
+                      >Campagnes d’e-mail marketing
+                    </a>
+                  </h3>
+                  <h5>ciblées</h5>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card" style="--color: 174, 77%, 50%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="bar-chart-outline"
+                      aria-hidden="true"
+                      style="
+                        width: 30px;
+                        height: 30px;
+                        color: #1de2ce;
+                      "></ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Articles de blog SEO </a>
+                  </h3>
+                  <h5>pour booster votre visibilité</h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- 
+        - #realisations
+      -->
+        <section class="section project" id="realisations" aria-label="project">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Projets</p>
+
+            <h2 class="h2 section-title text-center">
+              Nos <span class="has-before">Réalisations</span>
+            </h2>
+
+            <div class="project-slider owl-carousel">
+              <div class="slider-item">
+                <div class="overlay"></div>
+                <div class="container">
+                  <div class="project-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 835; --height: 429">
+                      <img
+                        src="./assets/images/screen-5.png"
+                        width="835"
+                        height="429"
+                        loading="lazy"
+                        alt="Book art design"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a
+                          href="project-details/pro-clean-store.html"
+                          class="card-title white-text"
+                          >Pro Clean Store - Produits Médicaux
+                        </a>
+                      </h3>
+
+                      <p class="white-text">Site E-Commerce</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider-item">
+                <div class="overlay"></div>
+                <div class="container">
+                  <div class="project-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 835; --height: 429">
+                      <img
+                        src="./assets/images/screen-2.png"
+                        width="835"
+                        height="429"
+                        loading="lazy"
+                        alt="Book art design"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a
+                          href="project-details/maison-ochi.html"
+                          class="card-title white-text"
+                          >Maisons d'hote - Maisons Ochi</a
+                        >
+                      </h3>
+
+                      <p class="white-text">Site Web</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider-item">
+                <div class="overlay"></div>
+                <div class="container">
+                  <div class="project-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 835; --height: 429">
+                      <img
+                        src="./assets/images/screen-1.png"
+                        width="835"
+                        height="429"
+                        loading="lazy"
+                        alt="Book art design"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a
+                          href="project-details/ala-comptable.html"
+                          class="card-title white-text"
+                          >Cabinet de comptabilité</a
+                        >
+                      </h3>
+
+                      <p class="white-text">Site Web</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="slider-item">
+                <div class="overlay"></div>
+                <div class="container">
+                  <div class="project-card">
+                    <figure
+                      class="card-banner img-holder"
+                      style="--width: 835; --height: 429">
+                      <img
+                        src="./assets/images/screen-3.png"
+                        width="835"
+                        height="429"
+                        loading="lazy"
+                        alt="Book art design"
+                        class="img-cover" />
+                    </figure>
+
+                    <div class="card-content">
+                      <h3 class="h3">
+                        <a
+                          href="project-details/ktita.html"
+                          class="card-title white-text"
+                          >Vente vêtements - En ligne</a
+                        >
+                      </h3>
+
+                      <p class="white-text">Site E-Commerce</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="section process" id="process" aria-label="process">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Processus</p>
+
+            <h2 class="h2 section-title text-center">
+              Notre processus de <span class="has-before">Travail</span>
+            </h2>
+
+            <ul class="grid-list">
+              <li data-aos="fade-up" data-aos-delay="100">
+                <div class="service-card" style="--color: 174, 77%, 50%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="chatbubbles-outline"
+                      aria-hidden="true"
+                      style="width: 30px; height: 30px; color: #1de2ce">
+                    </ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Découverte</a>
+                  </h3>
+                  <h5>
+                    On apprend à connaître votre activité, vos objectifs et vos
+                    besoins pour poser des bases solides.
+                  </h5>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="200">
+                <div class="service-card" style="--color: 17, 100%, 68%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="folder-open-outline"
+                      aria-hidden="true"
+                      style="width: 30px; height: 30px; color: #ff8a5c">
+                    </ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Contenu essentiel</a>
+                  </h3>
+                  <h5>
+                    On vous guide pour rassembler vos textes, images et autres
+                    ressources via un espace de partage simple.
+                  </h5>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="300">
+                <div class="service-card" style="--color: 210, 100%, 55%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="color-palette-outline"
+                      aria-hidden="true"
+                      style="width: 30px; height: 30px; color: #3399ff">
+                    </ion-icon>
+                  </div>
+
+                  <h3 class="h3"><a href="#" class="card-title">Design</a></h3>
+                  <h5>
+                    On crée des maquettes modernes et claires, que vous validez
+                    avant le développement.
+                  </h5>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="400">
+                <div class="service-card" style="--color: 145, 63%, 49%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="code-slash-outline"
+                      aria-hidden="true"
+                      style="width: 30px; height: 30px; color: #32d296">
+                    </ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Développement</a>
+                  </h3>
+                  <h5>
+                    On intègre le contenu validé dans les maquettes pour créer
+                    votre site fonctionnel.
+                  </h5>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="500">
+                <div class="service-card" style="--color: 48, 100%, 60%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="rocket-outline"
+                      aria-hidden="true"
+                      style="width: 30px; height: 30px; color: #f9c80e">
+                    </ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Mise en ligne</a>
+                  </h3>
+                  <h5>
+                    On réalise une dernière vérification et on effectue les
+                    tests finaux avant de publier le site.
+                  </h5>
+                </div>
+              </li>
+
+              <li data-aos="fade-up" data-aos-delay="600">
+                <div class="service-card" style="--color: 280, 55%, 60%">
+                  <div class="card-icon">
+                    <ion-icon
+                      name="school-outline"
+                      aria-hidden="true"
+                      style="width: 30px; height: 30px; color: #bb86fc">
+                    </ion-icon>
+                  </div>
+
+                  <h3 class="h3">
+                    <a href="#" class="card-title">Formation & support</a>
+                  </h3>
+                  <h5>
+                    On vous forme à l'utilisation du site et on vous accompagne
+                    avec un mois de support offert.
+                  </h5>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+      </article>
+    </main>
+
+    <!-- 
+    - #FOOTER
+  -->
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-top section">
+          <div class="footer-brand">
+            <p class="footer-list-title">
+              <img
+                src="/assets/images/logo-footer.png"
+                alt="logo"
+                width="200" />
+            </p>
+
+            <p class="footer-text">
+              Des solutions digitales sur mesure et fiables, adaptées à tous les
+              budgets. <br />
+              Votre succès, notre engagement !
+            </p>
+          </div>
+          <ul class="footer-list">
+            <li class="navbar-item">
+              <p class="footer-list-title">Liens Utiles</p>
+            </li>
+
+            <li>
+              <a href="#accueil">Accueil</a>
+            </li>
+
+            <li>
+              <a href="#apropos">À Propos</a>
+            </li>
+
+            <li>
+              <a href="#services">Services</a>
+            </li>
+
+            <li>
+              <a href="#realisations">Réalisations</a>
+            </li>
+
+            <li>
+              <a href="#process">Processus</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li class="navbar-item">
+              <p class="footer-list-title">Consultation</p>
+            </li>
+
+            <li>
+              <a href="contact.html">On vous écoute !</a>
+            </li>
+          </ul>
+          <ul class="footer-list">
+            <li>
+              <p class="footer-list-title">Contactez-nous</p>
+            </li>
+
+            <li>
+              Avenue Taher Sfar, Cité des médecins, Manar 2, Tunis, Tunisie
+            </li>
+            <li>
+              <a class="footer-link" href="mailto:hammi.digital.lab@gmail.com">
+                hammi.digital.lab@gmail.com
+              </a>
+            </li>
+            <li>
+              <a class="footer-link" href="tel:00 216 54 091 163">
+                (+216) 54 091 163
+              </a>
+            </li>
+            <li>
+              <ul class="social-list footer-link">
+                <li>
+                  <a
+                    href="https://www.instagram.com/hammi.digital.lab/"
+                    target="_blank"
+                    class="social-link">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://www.facebook.com/profile.php?id=61574885107269"
+                    target="_blank"
+                    class="social-link">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                  </a>
+                </li>
+
+                <li>
+                  <a
+                    href="https://wa.me/0021654091163"
+                    target="_blank"
+                    class="social-link">
+                    <ion-icon name="logo-whatsapp"></ion-icon>
+                  </a>
+                </li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+
+        <div class="footer-bottom">
+          <p class="copyright">
+            &copy; 2024 Hammi Digital Lab. Tous droits réservés®
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn has-after active"
+      aria-label="back to top"
+      data-back-top-btn>
+      <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/jquery.min.js"></script>
+    <script src="./assets/js/jquery.lettering.js"></script>
+    <script src="./assets/js/jquery.textillate.js"></script>
+    <script src="./assets/js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="./assets/js/owl.carousel.min.js"></script>
+    <script src="./assets/js/aos/aos.js"></script>
+    <script src="./assets/js/script.js" defer></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
