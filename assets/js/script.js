@@ -138,7 +138,7 @@ function setActiveElement(elements, activeIndex) {
 
 function activateElements() {
   let filterBtns = document.getElementsByClassName("filter-btn");
-  let gridElements = document.querySelector('.service').getElementsByClassName("grid-list");
+  let gridElements = document.querySelector('.service')?.getElementsByClassName("grid-list");
 
   Array.from(filterBtns).forEach((filterBtn, index) => {
     filterBtn.addEventListener("click", function () {
