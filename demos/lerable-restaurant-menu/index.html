@@ -1,0 +1,622 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- 
+    - primary meta tags
+  -->
+    <title>L'Érable - Creative Kitchen</title>
+    <meta name="title" content="Grilli - Amazing & Delicious Food" />
+    <meta
+      name="description"
+      content="This is a Restaurant html template made by codewithsadee" />
+
+    <!-- 
+    - favicon
+  -->
+    <link rel="shortcut icon" href="./favicon.svg" type="image/svg+xml" />
+
+    <!-- 
+    - google font link
+  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;700&family=Forum&display=swap"
+      rel="stylesheet" />
+
+    <!-- 
+    - custom css link
+  -->
+    <link rel="stylesheet" href="./assets/css/style.css" />
+
+    <!-- 
+    - preload images
+  -->
+    <link rel="preload" as="image" href="./assets/images/hero-slider-1.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-2.jpg" />
+    <link rel="preload" as="image" href="./assets/images/hero-slider-3.jpg" />
+  </head>
+
+  <body id="top">
+    <!-- 
+    - #PRELOADER
+  -->
+
+    <div class="preload" data-preaload>
+      <div class="circle"></div>
+      <p class="text">L'erable</p>
+    </div>
+    <section class="section menu-header">
+      <div class="container">
+        <div class="logo-container">
+          <img src="./assets/images/logo.png" alt="logo" class="logo-image" />
+        </div>
+      </div>
+    </section>
+    <section class="section menu" aria-label="menu-label" id="menu">
+      <div class="container">
+        <p class="section-subtitle text-center label-2">Sélection spéciale</p>
+
+        <div class="special-plate-list">
+          <h2 class="headline-1 section-title text-center">Plat Signature</h2>
+          <div style="display: flex; justify-content: center">
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-2.jpg"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Entrecôte l'Érable"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Entrecôte l'Érable</a>
+                  </h3>
+
+                  <span class="badge label-1">Notre Spécialité</span>
+
+                  <span class="span title-2">59 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Entrecôte tendre, sauce signature, frites dorées dorées,
+                  salade fraîche.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container">
+        <h2 class="headline-1 section-title text-center">Entrées Gourmandes</h2>
+
+        <ul class="grid-list">
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-5.jpg"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Salade César Façon Érable"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Salade César Façon Érable</a>
+                  </h3>
+
+                  <span class="span title-2">33 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Poulet tendre cuit à basse température, salade romaine,
+                  parmesan râpé et croûtons dorés, sauce César.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-1.jpg"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Carpaccio Poulpe"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Carpaccio Poulpe</a>
+                  </h3>
+
+                  <span class="span title-2">33 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Poulpe finement tranché, huile d’olive, citron, câpres,
+                  roquette, sel, poivre, herbes fraîches.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-7.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Carpaccio Saumon"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Carpaccio Saumon</a>
+                  </h3>
+
+                  <span class="span title-2">35 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Saumon frais finement tranché, huile d’olive, citron, aneth,
+                  baies roses, sel, poivre.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-8.jpeg"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Symphonie de Crevettes"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Symphonie de Crevettes</a>
+                  </h3>
+
+                  <span class="span title-2">38 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Duo de crevettes royales et de chevrettes, sur une nappe de
+                  salade fraiche et quinoa, tomates cerises.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <img
+          src="./assets/images/shape-5.png"
+          width="921"
+          height="1036"
+          loading="lazy"
+          alt="shape"
+          class="shape shape-2 move-anim" />
+        <img
+          src="./assets/images/shape-6.png"
+          width="343"
+          height="345"
+          loading="lazy"
+          alt="shape"
+          class="shape shape-3 move-anim" />
+      </div>
+      <div class="container">
+        <h2 class="headline-1 section-title text-center">
+          Spécialités de la Maison
+        </h2>
+
+        <ul class="grid-list">
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-3.jpeg"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Greek Salad"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Filet de BŒuf Brésilien</a>
+                  </h3>
+
+                  <span class="span title-2">75 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Tendre filet de bœuf brésilien, accompagné de sa purée de
+                  pommes de terre au beurre noisette, champignons, épinards
+                  grillés, jus de bœuf, (Garniture au choix).
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-9.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Poisson en Papillote"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Poisson en Papillote</a>
+                  </h3>
+
+                  <span class="span title-2">50 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Tomates cerises, tomates cerises séchées, olive, câpres, zeste
+                  citron, persil, (Garniture au choix).
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-3.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Butternut Pumpkin"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Courge Butternut</a>
+                  </h3>
+                  <span class="span title-2">25 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Courge butternut rôtie, huile d'olive, miel, thym, noix de
+                  pécan, sel, poivre.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-4.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Tokusen Wagyu"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Tokusen Wagyu</a>
+                  </h3>
+                  <span class="badge label-1">Nouveau</span>
+                  <span class="span title-2">39 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Légumes, fromages, viandes hachées, sauce tomate,
+                  assaisonnements et épices.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-5.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Olivas Rellenas"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Olives Farcies</a>
+                  </h3>
+                  <span class="span title-2">25 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Avocats au crabe, oignon rouge, salade de crabe farcie dans
+                  des poivrons rouges et verts.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-6.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Opu Fish"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Poisson Opu</a>
+                  </h3>
+                  <span class="span title-2">49 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Légumes, fromages, viandes hachées, sauce tomate,
+                  assaisonnements et épices.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-1.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Greek Salad"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Salade Grecque</a>
+                  </h3>
+                  <span class="badge label-1">Saisonnière</span>
+                  <span class="span title-2">25 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Tomates, poivron vert, rondelles de concombre, oignons, olives
+                  et fromage feta.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-2.png"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Lasagne"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Lasagnes</a>
+                  </h3>
+                  <span class="span title-2">40 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Légumes, fromages, viandes hachées, sauce tomate,
+                  assaisonnements et épices.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <img
+          src="./assets/images/shape-5.png"
+          width="921"
+          height="1036"
+          loading="lazy"
+          alt="shape"
+          class="shape shape-2 move-anim" />
+        <img
+          src="./assets/images/shape-6.png"
+          width="343"
+          height="345"
+          loading="lazy"
+          alt="shape"
+          class="shape shape-3 move-anim" />
+      </div>
+      <div class="container">
+        <h2 class="headline-1 section-title text-center">Risottos du Chef</h2>
+
+        <ul class="grid-list">
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-6.jpg"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Risotto au Ribs"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Risotto au Ribs</a>
+                  </h3>
+
+                  <span class="span title-2">39 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Sauce blanche, ribs de bœuf, truffe, parmesan, champignons
+                  sautés, épinards, jus de bœuf.
+                </p>
+              </div>
+            </div>
+          </li>
+
+          <li>
+            <div class="menu-card hover:card">
+              <figure
+                class="card-banner img-holder"
+                style="--width: 100; --height: 100">
+                <img
+                  src="./assets/images/menu-4.jpeg"
+                  width="100"
+                  height="100"
+                  loading="lazy"
+                  alt="Greek Salad"
+                  class="img-cover" />
+              </figure>
+
+              <div>
+                <div class="title-wrapper">
+                  <h3 class="title-3">
+                    <a href="#" class="card-title">Risotto Mer et Saveur</a>
+                  </h3>
+
+                  <span class="span title-2">42 DT</span>
+                </div>
+
+                <p class="card-text label-1">
+                  Crevettes royales, chevrettes, risotto crémeux, parmesan, Œuf
+                  de lump, sauce saumon fumé.
+                </p>
+              </div>
+            </div>
+          </li>
+        </ul>
+
+        <img
+          src="./assets/images/shape-5.png"
+          width="921"
+          height="1036"
+          loading="lazy"
+          alt="shape"
+          class="shape shape-2 move-anim" />
+        <img
+          src="./assets/images/shape-6.png"
+          width="343"
+          height="345"
+          loading="lazy"
+          alt="shape"
+          class="shape shape-3 move-anim" />
+      </div>
+    </section>
+
+    <!-- 
+    - #BACK TO TOP
+  -->
+
+    <a
+      href="#top"
+      class="back-top-btn active"
+      aria-label="back to top"
+      data-back-top-btn>
+      <ion-icon name="chevron-up" aria-hidden="true"></ion-icon>
+    </a>
+
+    <!-- 
+    - custom js link
+  -->
+    <script src="./assets/js/script.js"></script>
+
+    <!-- 
+    - ionicon link
+  -->
+    <script
+      type="module"
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script
+      nomodule
+      src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+  </body>
+</html>
