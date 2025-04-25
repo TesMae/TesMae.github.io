@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Type Fast</title>
+    <style>
+      /* Modern color scheme */
+      :root {
+        --primary: #6366f1;
+        --primary-dark: #4f46e5;
+        --accent: #f472b6;
+        --bg-dark: #1e293b;
+        --text-light: #f8fafc;
+        --card-bg: rgba(255, 255, 255, 0.07);
+        --border-light: rgba(255, 255, 255, 0.1);
+      }
+
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+        font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-color: var(--bg-dark);
+        color: var(--text-light);
+        padding: 20px;
+        background-image: radial-gradient(
+            circle at top right,
+            rgba(99, 102, 241, 0.15),
+            transparent 50%
+          ),
+          radial-gradient(
+            circle at bottom left,
+            rgba(244, 114, 182, 0.1),
+            transparent 50%
+          );
+      }
+
+      .container {
+        width: 100%;
+        max-width: 600px;
+        background: rgba(30, 41, 59, 0.8);
+        backdrop-filter: blur(10px);
+        border-radius: 16px;
+        padding: 2rem;
+        box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.5);
+        border: 1px solid var(--border-light);
+      }
+
+      .header {
+        text-align: center;
+        margin-bottom: 2rem;
+      }
+
+      .header h1 {
+        font-size: 2.5rem;
+        font-weight: 700;
+        background: linear-gradient(to right, var(--primary), var(--accent));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+        margin-bottom: 0.5rem;
+      }
+
+      .header p {
+        color: rgba(248, 250, 252, 0.7);
+        font-size: 1rem;
+      }
+
+      .word-display {
+        background: var(--card-bg);
+        padding: 2rem 1.5rem;
+        border-radius: 12px;
+        text-align: center;
+        position: relative;
+        margin-bottom: 1.5rem;
+        border: 1px solid var(--border-light);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #random-word {
+        font-size: 2.5rem;
+        font-weight: 700;
+        color: var(--accent);
+        letter-spacing: 3px;
+        display: block;
+        min-height: 3.5rem;
+      }
+
+      #rounds {
+        position: absolute;
+        top: 12px;
+        left: 12px;
+        background: var(--primary-dark);
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      #timer {
+        position: absolute;
+        top: 12px;
+        right: 12px;
+        background: var(--primary-dark);
+        padding: 0.4rem 0.8rem;
+        border-radius: 20px;
+        font-weight: 600;
+        font-size: 0.9rem;
+      }
+
+      .input-area {
+        display: flex;
+        gap: 1rem;
+        margin-bottom: 1.5rem;
+      }
+
+      #text-input {
+        flex: 1;
+        padding: 1rem;
+        border-radius: 8px;
+        border: 2px solid var(--border-light);
+        background: var(--card-bg);
+        color: var(--text-light);
+        font-size: 1.25rem;
+        outline: none;
+        transition: all 0.3s ease;
+      }
+
+      #text-input:focus {
+        border-color: var(--primary);
+        box-shadow: 0 0 0 3px rgba(99, 102, 241, 0.3);
+      }
+
+      .button {
+        padding: 0 1.5rem;
+        border-radius: 8px;
+        font-size: 1rem;
+        font-weight: 600;
+        cursor: pointer;
+        transition: all 0.2s ease;
+        height: 100%;
+        outline: none;
+      }
+
+      #start {
+        background: linear-gradient(
+          to right,
+          var(--primary),
+          var(--primary-dark)
+        );
+        color: var(--text-light);
+        border: none;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      #start:hover {
+        transform: translateY(-2px);
+        box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+      }
+
+      #end {
+        background: transparent;
+        color: var(--text-light);
+        border: 2px solid var(--border-light);
+      }
+
+      #end:hover {
+        border-color: var(--text-light);
+        transform: translateY(-2px);
+      }
+
+      .stats-card {
+        background: var(--card-bg);
+        padding: 1.5rem;
+        border-radius: 12px;
+        border: 1px solid var(--border-light);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .stats-header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        border-bottom: 1px solid var(--border-light);
+        padding-bottom: 0.75rem;
+        margin-bottom: 1rem;
+      }
+
+      .stats-header h2 {
+        font-size: 1.25rem;
+        font-weight: 600;
+        color: var(--text-light);
+      }
+
+      .stats-item {
+        display: flex;
+        justify-content: space-between;
+        padding: 0.75rem 0;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.05);
+      }
+
+      .stats-item:last-child {
+        border-bottom: none;
+      }
+
+      .stats-label {
+        color: rgba(248, 250, 252, 0.7);
+      }
+
+      .stats-value {
+        font-weight: 600;
+        color: var(--accent);
+      }
+
+      #avg-typing-time {
+        font-size: 1.1rem;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 640px) {
+        .container {
+          padding: 1.5rem;
+        }
+
+        .header h1 {
+          font-size: 2rem;
+        }
+
+        #random-word {
+          font-size: 2rem;
+        }
+
+        .input-area {
+          flex-direction: column;
+        }
+
+        .buttons {
+          display: flex;
+          gap: 1rem;
+        }
+
+        #start,
+        #end {
+          flex: 1;
+          padding: 0.75rem;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Type Fast</h1>
+        <p>Test your typing speed with random words</p>
+      </div>
+
+      <div class="word-display">
+        <span id="rounds">0</span>
+        <span id="random-word">Ready?</span>
+        <span id="timer">0.000</span>
+      </div>
+
+      <div class="input-area">
+        <input
+          id="text-input"
+          type="text"
+          placeholder="Type the word here..." />
+        <button id="start" class="button">Start</button>
+        <button id="end" class="button">End</button>
+      </div>
+
+      <div class="stats-card">
+        <div class="stats-header">
+          <h2>Your Stats</h2>
+        </div>
+
+        <div class="stats-item">
+          <span class="stats-label">Average typing time:</span>
+          <span id="avg-typing-time" class="stats-value">0.0s</span>
+        </div>
+
+        <div class="stats-item">
+          <span class="stats-label">Total typing time:</span>
+          <span id="total-typing-time" class="stats-value">0.0s</span>
+        </div>
+
+        <div class="stats-item">
+          <span class="stats-label">Total words:</span>
+          <span id="total-words" class="stats-value">0</span>
+        </div>
+      </div>
+    </div>
+
+    <script src="./main.js"></script>
+  </body>
+</html>
