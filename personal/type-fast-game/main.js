@@ -336,7 +336,7 @@ class Game {
     }
 
     isInputAccurate() {
-        return this.input.getValue() === this.words.getCurrentWord();
+        return this.input.getValue().toLowerCase() === this.words.getCurrentWord().toLowerCase();
     }
 
     displayWin() {
