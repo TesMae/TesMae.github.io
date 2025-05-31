@@ -59,6 +59,8 @@
     <link
       href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap"
       rel="stylesheet" />
+
+    <script src="https://www.google.com/recaptcha/api.js" async defer></script>
   </head>
 
   <body id="top">
@@ -90,32 +92,29 @@
                 Boutique
               </a>
             </li>
+
             <li class="navbar-item">
-              <a href="/#apropos" class="navbar-link" data-nav-link>À Propos</a>
+              <a href="#apropos" class="navbar-link" data-nav-link>À Propos</a>
             </li>
 
             <li class="navbar-item">
-              <a href="/#services" class="navbar-link" data-nav-link
-                >Services</a
-              >
+              <a href="#services" class="navbar-link" data-nav-link>Services</a>
             </li>
 
             <li class="navbar-item">
-              <a href="/#realisations" class="navbar-link" data-nav-link
+              <a href="#realisations" class="navbar-link" data-nav-link
                 >Réalisations</a
               >
             </li>
 
             <li class="navbar-item">
-              <a href="/#process" class="navbar-link" data-nav-link
-                >Processus</a
-              >
+              <a href="#process" class="navbar-link" data-nav-link>Processus</a>
             </li>
 
             <li class="navbar-item">
-              <a href="/contact" class="navbar-link" data-nav-link>
-                Contactez-nous
-              </a>
+              <a href="/contact" class="navbar-link" data-nav-link
+                >Contactez-nous</a
+              >
             </li>
           </ul>
         </nav>
@@ -124,12 +123,8 @@
           <ion-icon name="menu-outline" aria-hidden="true"></ion-icon>
         </button>
 
-        <a href="/shop#products" class="btn btn-primary has-before has-after">
-          <ion-icon
-            name="cart-outline"
-            aria-hidden="true"
-            style="width: 30px; height: 30px; margin-right: 15px"></ion-icon
-          >Boutique
+        <a href="/" class="btn btn-primary has-before has-after">
+          Solutions Personnalisées
         </a>
 
         <div class="overlay" data-nav-toggler data-overlay></div>
@@ -137,89 +132,117 @@
     </header>
 
     <main>
-      <!-- 
-        - #FEATURE
+      <article>
+        <!-- 
+        - #HERO
       -->
-      <section
-        class="section project-details"
-        id="project-details"
-        aria-label="project-details">
-        <div class="container">
-          <figure class="feature-banner mt-5">
-            <img
-              src="/assets/images/project-1.png"
-              width="582"
-              loading="lazy"
-              alt="feature banner"
-              class="w-100" />
-          </figure>
+        <section class="section hero" id="accueil" aria-label="hero">
+          <div class="container">
+            <div class="hero-content">
+              <h3 class="h3 hero-title text-highlight">
+                <span class="test-textillate">
+                  <ul class="texts">
+                    <li><span>Augmentez vos ventes</span></li>
+                    <li><span>Automatisez vos processus </span></li>
+                    <li><span>Améliorez l'engagement de vos clients </span></li>
+                  </ul>
+                </span>
+              </h3>
+              <h2 class="h2 hero-title">
+                Des <span class="has-before">Solutions Logicielles </span> Qui
+                Boostent Votre Business
+              </h2>
 
-          <div class="feature-content sticky">
-            <p class="section-subtitle has-before">Étude de Cas</p>
+              <p class="hero-text">
+                Des solutions digitales simples pour accompagner la
+                transformation numérique de votre PME
+              </p>
 
-            <h2 class="h2 section-title">
-              Site Web pour un Cabinet de Comptabilité
+              <div class="wrapper">
+                <a
+                  class="btn btn-primary has-before has-after"
+                  aria-label="pixology promo"
+                  href="tel:00 216 54 091 163">
+                  <ion-icon name="call" aria-hidden="true"></ion-icon>
+                  <span class="span">Appelez-nous</span>
+                </a>
+                <a
+                  href="https://wa.me/0021654091163"
+                  target="_blank"
+                  class="social-link"
+                  style="--color: hsl(142, 70%, 45%)">
+                  <ion-icon name="logo-whatsapp"></ion-icon>
+
+                  <span class="span">Whatsapp</span>
+                </a>
+              </div>
+            </div>
+
+            <figure class="hero-banner animation-float">
+              <img
+                src="/assets/images/hero.jpg"
+                width="794"
+                height="637"
+                alt="hero banner"
+                class="hero-image w-100" />
+            </figure>
+          </div>
+        </section>
+
+        <!-- 
+        - #Products
+        -->
+        <section class="section products" id="products" aria-label="products">
+          <div class="container">
+            <p class="section-subtitle has-before text-center">Nos Produits</p>
+            <h2 class="h2 section-title text-center">
+              Gérez votre entreprise avec
+              <span class="has-before">simplicité et efficacité</span>
             </h2>
 
-            <ul class="feature-list">
-              <li>
-                <div class="feature-card">
-                  <div class="card-icon" style="--color: 174, 77%, 50%">
-                    <ion-icon name="rocket-sharp" aria-hidden="true"></ion-icon>
+            <ul class="products-grid">
+              <li class="fade-up">
+                <div
+                  class="product-card"
+                  style="--color: 231, 70%, 60%; --color-alt: 195, 85%, 55%">
+                  <div class="product-image-wrapper">
+                    <img
+                      src="/assets/images/logiciel-de-gestion-de-facture.jpg?w=400&h=250&fit=crop&crop=center"
+                      alt="Logiciel de Gestion de Facture"
+                      class="product-image" />
+                    <span class="product-badge">Populaire</span>
                   </div>
-
-                  <div>
-                    <h3 class="h3 card-title">Objectif</h3>
-
-                    <p class="card-text">
-                      Création d'un site web professionnel qui reflète
-                      l'expertise du cabinet, améliore sa visibilité en ligne et
-                      facilite la prise de contact avec les clients potentiels.
-                    </p>
-                  </div>
-                </div>
-              </li>
-
-              <li>
-                <div class="feature-card">
-                  <div class="card-icon" style="--color: 241, 77%, 63%">
-                    <ion-icon
-                      name="brush-outline"
-                      aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="h3 card-title">
-                      Design Moderne et Personnalisé
+                  <div class="product-content">
+                    <span class="product-category">Fawatir</span>
+                    <h3 class="product-title">
+                      Logiciel de Gestion de Factures
                     </h3>
-
-                    <p class="card-text">
-                      Création d'un design moderne et personnalisé reflétant le
-                      professionnalisme du cabinet.
+                    <p class="product-description">
+                      Solution de facturation complète pour créer et imprimer
+                      des factures rapidement, tout en gérant facilement vos
+                      clients et vos produits.
                     </p>
+                    <div class="product-features">
+                      <span class="feature-tag">CRM</span>
+                      <span class="feature-tag">Comptabilité</span>
+                      <span class="feature-tag">Analytics</span>
+                    </div>
+                    <div class="product-price-wrapper">
+                      <span class="product-price">TND 67.00</span>
+                      <span class="product-price-old">TND 124.00</span>
+                    </div>
+                    <a href="/shop/fawatir/" class="product-button"
+                      >Découvrir le produit</a
+                    >
                   </div>
                 </div>
               </li>
 
-              <li>
-                <div class="feature-card">
-                  <div class="card-icon" style="--color: 343, 98%, 60%">
-                    <ion-icon name="link-outline" aria-hidden="true"></ion-icon>
-                  </div>
-
-                  <div>
-                    <h3 class="h3 card-title">Module intégré</h3>
-
-                    <p class="card-text">
-                      Intégration d'un système de prise de rendez-vous en ligne.
-                    </p>
-                  </div>
-                </div>
-              </li>
+              <li class="fade-up"></li>
             </ul>
           </div>
-        </div>
-      </section>
+        </section>
+      </article>
     </main>
 
     <!-- 
@@ -249,23 +272,23 @@
             </li>
 
             <li>
-              <a href="/#accueil">Accueil</a>
+              <a href="#accueil">Accueil</a>
             </li>
 
             <li>
-              <a href="/#apropos">À Propos</a>
+              <a href="#apropos">À Propos</a>
             </li>
 
             <li>
-              <a href="/#services">Services</a>
+              <a href="#services">Services</a>
             </li>
 
             <li>
-              <a href="/#realisations">Réalisations</a>
+              <a href="#realisations">Réalisations</a>
             </li>
 
             <li>
-              <a href="/#process">Processus</a>
+              <a href="#process">Processus</a>
             </li>
           </ul>
           <ul class="footer-list">
@@ -313,7 +336,8 @@
                     <ion-icon name="logo-facebook"></ion-icon>
                   </a>
                 </li>
-              -->
+                -->
+
                 <li>
                   <a
                     href="https://wa.me/0021654091163"
