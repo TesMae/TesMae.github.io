@@ -50,6 +50,7 @@
     <link rel="stylesheet" href="/assets/css/owl.theme.default.min.css" />
 
     <link rel="stylesheet" href="/assets/css/style.css" />
+    <link rel="stylesheet" href="/assets/css/modal-style.css" />
 
     <!-- 
     - google font link
@@ -221,9 +222,9 @@
               href="https://wa.me/+21654091163?text=Bonjour%2C%20je%20souhaite%20commander%20le%20logiciel%20de%20facturation%20Fawatir.%20Pouvez-vous%20m%E2%80%99aider%20avec%20les%20d%C3%A9tails%20et%20le%20paiement%20%3F"
               target="_blank"
               class="visit-website-btn"
-              aria-label="Commander Maintenant">
+              aria-label="Essai Gratuit">
               <ion-icon name="logo-whatsapp"></ion-icon>
-              <span class="btn-text">Commander</span>
+              <span class="btn-text">Essai Gratuit</span>
               <span class="btn-icon">
                 <ion-icon
                   name="arrow-forward-outline"
@@ -438,6 +439,49 @@
       data-back-top-btn>
       <ion-icon name="arrow-up" aria-hidden="true"></ion-icon>
     </a>
+
+    <!-- Modal -->
+    <div class="modal-overlay" id="trialModal">
+      <div class="modal">
+        <div class="modal-header">
+          <button class="close-button" onclick="closeModal()">&times;</button>
+          <h2 class="modal-title">Essai Gratuit</h2>
+          <p class="modal-subtitle">Découvrez toutes nos fonctionnalités</p>
+        </div>
+        <div class="modal-body">
+          <div class="trial-info">
+            <h3>🎉 Offre Spéciale - 14 Jours Gratuits</h3>
+            <p>
+              Testez notre logiciel sans engagement et découvrez comment il peut
+              transformer votre entreprise.
+            </p>
+          </div>
+
+          <p>
+            <strong>Pendant votre période d'essai, vous aurez accès à :</strong>
+          </p>
+          <ul class="features-list">
+            <li>Toutes les fonctionnalités premium</li>
+            <li>Support technique prioritaire</li>
+            <li>Formation personnalisée</li>
+          </ul>
+
+          <button class="cta-button" onclick="startTrial()">
+            Commencer l'essai gratuit
+          </button>
+
+          <button class="secondary-button" onclick="closeModal()">
+            Peut-être plus tard
+          </button>
+
+          <div class="disclaimer">
+            Toutes les données créées pendant votre période d'essai seront
+            automatiquement conservées si vous choisissez d'acheter une licence
+            à vie
+          </div>
+        </div>
+      </div>
+    </div>
 
     <!-- 
     - custom js link

@@ -148,3 +148,35 @@ function activateElements() {
   });
 }
 activateElements();
+
+// Show modal when page loads
+window.addEventListener('load', function() {
+    setTimeout(function() {
+        document.getElementById('trialModal').classList.add('show');
+    }, 500); // Small delay for better UX
+});
+
+// Close modal function
+function closeModal() {
+    document.getElementById('trialModal').classList.remove('show');
+}
+
+// Start trial function
+function startTrial() {
+    window.open("https://wa.me/+21654091163?text=Bonjour%2C%20je%20souhaite%20commander%20le%20logiciel%20de%20facturation%20Fawatir.%20Pouvez-vous%20m%E2%80%99aider%20avec%20les%20d%C3%A9tails%20et%20le%20paiement%20%3F", "_blank");
+    closeModal();
+}
+
+// Close modal when clicking outside
+document.getElementById('trialModal').addEventListener('click', function(e) {
+    if (e.target === this) {
+        closeModal();
+    }
+});
+
+// Close modal with Escape key
+document.addEventListener('keydown', function(e) {
+    if (e.key === 'Escape') {
+        closeModal();
+    }
+});
