@@ -1,0 +1,468 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Matchy Matchy</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container" id="startScreen">
+      <h1>Start Your Matchy Matchy Session</h1>
+      <p
+        style="
+          text-align: center;
+          margin-bottom: 1.5rem;
+          color: var(--text-light);
+        ">
+        Find out how compatible you are with your partner!
+      </p>
+      <button onclick="startSession()">Start Now</button>
+    </div>
+
+    <div class="container hidden" id="formScreen">
+      <h2>Answer These Questions</h2>
+      <p
+        style="
+          text-align: center;
+          margin-bottom: 1.5rem;
+          color: var(--text-light);
+        ">
+        Tell us about your preferences
+      </p>
+      <form id="quizForm">
+        <div class="questions-form">
+          <div class="question">
+            <label
+              >1. Tu préfères être le centre de l’attention ou rester discret
+              ?</label
+            >
+            <select name="question1">
+              <option value="centre_d’attention">Centre d’attention</option>
+              <option value="discret(e)">Discret(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >2. Tu préfères les sorties en groupe ou avec 1 ou 2 personnes
+              ?</label
+            >
+            <select name="question2">
+              <option value="groupe">Groupe</option>
+              <option value="1-2_personnes">1-2 personnes</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >3. Tu aimes être toujours entouré de gens ou tu préfères avoir
+              ton temps à toi ?</label
+            >
+            <select name="question3">
+              <option value="entouré(e)">Entouré(e)</option>
+              <option value="temps_seul(e)">Temps seul(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >4. Tu vis proche de ta famille ou tu préfères l’indépendance
+              ?</label
+            >
+            <select name="question4">
+              <option value="proche_famille">Proche famille</option>
+              <option value="indépendance">Indépendance</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>5. Tu adores l’ambiance ou tu préfères l’ordre ?</label>
+            <select name="question5">
+              <option value="ambiance">Ambiance</option>
+              <option value="ordre">Ordre</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>6. Tu parles beaucoup ou tu es réservé(e) ?</label>
+            <select name="question6">
+              <option value="bavard(e)">Bavard(e)</option>
+              <option value="réservé(e)">Réservé(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >7. Tu dramatises les problèmes ou tu les oublies vite ?</label
+            >
+            <select name="question7">
+              <option value="dramatise">Dramatise</option>
+              <option value="oublie_vite">Oublie vite</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>8. Tu es hyper sensible ou plutôt froid(e) ?</label>
+            <select name="question8">
+              <option value="sensible">Sensible</option>
+              <option value="froid(e)">Froid(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>9. Tu dis tout franchement ou tu gardes pour toi ?</label>
+            <select name="question9">
+              <option value="direct(e)">Direct(e)</option>
+              <option value="réservé(e)">Réservé(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>10. Tu es pour la thérapie ou contre ?</label>
+            <select name="question10">
+              <option value="pour">Pour</option>
+              <option value="contre">Contre</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>11. Tu pardonnes ou tu te venges ?</label>
+            <select name="question11">
+              <option value="pardon">Pardon</option>
+              <option value="vengeance">Vengeance</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>12. Tu affrontes tes blessures ou tu les ignores ?</label>
+            <select name="question12">
+              <option value="affronte">Affronte</option>
+              <option value="ignore">Ignore</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >13. Tu préfères te marier jeune ou prendre ton temps avant de te
+              marier ?</label
+            >
+            <select name="question13">
+              <option value="te_marier_jeune">Te marier jeune</option>
+              <option value="prendre_ton_temps">Prendre ton temps</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>14. Un mariage simple ou un gros mariage ?</label>
+            <select name="question14">
+              <option value="simple">Simple</option>
+              <option value="gros">Gros</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >15. Tu veux prendre en charge ou partager équitablement ?</label
+            >
+            <select name="question15">
+              <option value="prendre_en_charge">Prendre en charge</option>
+              <option value="partager">Partager</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>16. Partage des finances ou chacun gère ?</label>
+            <select name="question16">
+              <option value="partage">Partage</option>
+              <option value="séparé">Séparé</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >17. Tu veux être le leader ou pour une relation équilibrée
+              ?</label
+            >
+            <select name="question17">
+              <option value="leader">Leader</option>
+              <option value="équilibrée">Équilibrée</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>18. Romantique ou calme et rationnel ?</label>
+            <select name="question18">
+              <option value="romantique">Romantique</option>
+              <option value="calme_et_rationnel">Calme et rationnel</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>19. Tu aimerais avoir un garçon ou une fille ?</label>
+            <select name="question19">
+              <option value="garçon">Garçon</option>
+              <option value="fille">Fille</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >20. Tu aimes être occupé(e) ou tu préfères une vie lente ?</label
+            >
+            <select name="question20">
+              <option value="occupé(e)">Occupé(e)</option>
+              <option value="vie_lente">Vie lente</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >21. Tu es plutôt du genre à planifier ta journée ou à y aller au
+              feeling ?</label
+            >
+            <select name="question21">
+              <option value="planifier">Planifier</option>
+              <option value="aller_au_feeling">Aller au feeling</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>22. Sportif/sportive ou paresseux/paresseuse ?</label>
+            <select name="question22">
+              <option value="sportif(ve)">Sportif(ve)</option>
+              <option value="paresseux(se)">Paresseux(se)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>23. Organisé(e) ou chaotique ?</label>
+            <select name="question23">
+              <option value="organisé(e)">Organisé(e)</option>
+              <option value="chaotique">Chaotique</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>24. Vivre à l’étranger ou rester dans ton pays ?</label>
+            <select name="question24">
+              <option value="étranger">Étranger</option>
+              <option value="pays">Pays</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit">Generate Link</button>
+      </form>
+    </div>
+
+    <div class="container hidden" id="linkScreen">
+      <h2>Share This Link</h2>
+      <p
+        style="
+          text-align: center;
+          margin-bottom: 1.5rem;
+          color: var(--text-light);
+        ">
+        Send to your partner to see how well you match!
+      </p>
+      <input type="text" id="partnerLink" readonly />
+      <button onclick="copyLink()">Copy Link</button>
+    </div>
+
+    <div class="container hidden" id="partnerFormScreen">
+      <h2>Your Turn!</h2>
+      <p
+        style="
+          text-align: center;
+          margin-bottom: 1.5rem;
+          color: var(--text-light);
+        ">
+        Answer the same questions to see how you match
+      </p>
+      <form id="partnerForm">
+        <div class="questions-form">
+          <div class="question">
+            <label
+              >1. Tu préfères être le centre de l’attention ou rester discret
+              ?</label
+            >
+            <select name="question1">
+              <option value="centre_d’attention">Centre d’attention</option>
+              <option value="discret(e)">Discret(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >2. Tu préfères les sorties en groupe ou avec 1 ou 2 personnes
+              ?</label
+            >
+            <select name="question2">
+              <option value="groupe">Groupe</option>
+              <option value="1-2_personnes">1-2 personnes</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >3. Tu aimes être toujours entouré de gens ou tu préfères avoir
+              ton temps à toi ?</label
+            >
+            <select name="question3">
+              <option value="entouré(e)">Entouré(e)</option>
+              <option value="temps_seul(e)">Temps seul(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >4. Tu vis proche de ta famille ou tu préfères l’indépendance
+              ?</label
+            >
+            <select name="question4">
+              <option value="proche_famille">Proche famille</option>
+              <option value="indépendance">Indépendance</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>5. Tu adores l’ambiance ou tu préfères l’ordre ?</label>
+            <select name="question5">
+              <option value="ambiance">Ambiance</option>
+              <option value="ordre">Ordre</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>6. Tu parles beaucoup ou tu es réservé(e) ?</label>
+            <select name="question6">
+              <option value="bavard(e)">Bavard(e)</option>
+              <option value="réservé(e)">Réservé(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >7. Tu dramatises les problèmes ou tu les oublies vite ?</label
+            >
+            <select name="question7">
+              <option value="dramatise">Dramatise</option>
+              <option value="oublie_vite">Oublie vite</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>8. Tu es hyper sensible ou plutôt froid(e) ?</label>
+            <select name="question8">
+              <option value="sensible">Sensible</option>
+              <option value="froid(e)">Froid(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>9. Tu dis tout franchement ou tu gardes pour toi ?</label>
+            <select name="question9">
+              <option value="direct(e)">Direct(e)</option>
+              <option value="réservé(e)">Réservé(e)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>10. Tu es pour la thérapie ou contre ?</label>
+            <select name="question10">
+              <option value="pour">Pour</option>
+              <option value="contre">Contre</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>11. Tu pardonnes ou tu te venges ?</label>
+            <select name="question11">
+              <option value="pardon">Pardon</option>
+              <option value="vengeance">Vengeance</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>12. Tu affrontes tes blessures ou tu les ignores ?</label>
+            <select name="question12">
+              <option value="affronte">Affronte</option>
+              <option value="ignore">Ignore</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >13. Tu préfères te marier jeune ou prendre ton temps avant de te
+              marier ?</label
+            >
+            <select name="question13">
+              <option value="te_marier_jeune">Te marier jeune</option>
+              <option value="prendre_ton_temps">Prendre ton temps</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>14. Un mariage simple ou un gros mariage ?</label>
+            <select name="question14">
+              <option value="simple">Simple</option>
+              <option value="gros">Gros</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >15. Tu veux prendre en charge ou partager équitablement ?</label
+            >
+            <select name="question15">
+              <option value="prendre_en_charge">Prendre en charge</option>
+              <option value="partager">Partager</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>16. Partage des finances ou chacun gère ?</label>
+            <select name="question16">
+              <option value="partage">Partage</option>
+              <option value="séparé">Séparé</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >17. Tu veux être le leader ou pour une relation équilibrée
+              ?</label
+            >
+            <select name="question17">
+              <option value="leader">Leader</option>
+              <option value="équilibrée">Équilibrée</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>18. Romantique ou calme et rationnel ?</label>
+            <select name="question18">
+              <option value="romantique">Romantique</option>
+              <option value="calme_et_rationnel">Calme et rationnel</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>19. Tu aimerais avoir un garçon ou une fille ?</label>
+            <select name="question19">
+              <option value="garçon">Garçon</option>
+              <option value="fille">Fille</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >20. Tu aimes être occupé(e) ou tu préfères une vie lente ?</label
+            >
+            <select name="question20">
+              <option value="occupé(e)">Occupé(e)</option>
+              <option value="vie_lente">Vie lente</option>
+            </select>
+          </div>
+          <div class="question">
+            <label
+              >21. Tu es plutôt du genre à planifier ta journée ou à y aller au
+              feeling ?</label
+            >
+            <select name="question21">
+              <option value="planifier">Planifier</option>
+              <option value="aller_au_feeling">Aller au feeling</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>22. Sportif/sportive ou paresseux/paresseuse ?</label>
+            <select name="question22">
+              <option value="sportif(ve)">Sportif(ve)</option>
+              <option value="paresseux(se)">Paresseux(se)</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>23. Organisé(e) ou chaotique ?</label>
+            <select name="question23">
+              <option value="organisé(e)">Organisé(e)</option>
+              <option value="chaotique">Chaotique</option>
+            </select>
+          </div>
+          <div class="question">
+            <label>24. Vivre à l’étranger ou rester dans ton pays ?</label>
+            <select name="question24">
+              <option value="étranger">Étranger</option>
+              <option value="pays">Pays</option>
+            </select>
+          </div>
+        </div>
+        <button type="submit">See Results</button>
+      </form>
+    </div>
+
+    <div class="container hidden" id="resultsScreen">
+      <h2>Compatibility Dashboard</h2>
+      <div class="dashboard" id="results"></div>
+      <button onclick="startOver()">Start Over</button>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
