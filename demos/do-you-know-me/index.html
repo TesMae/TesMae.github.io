@@ -1,0 +1,353 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Do you know me</title>
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="container" id="startScreen">
+      <h1>
+        Do You Know Me? <br />
+        Do You, Do You
+      </h1>
+      <p
+        style="
+          text-align: center;
+          margin-bottom: 1.5rem;
+          color: var(--text-light);
+        ">
+        Find out if your partner know you well!
+      </p>
+      <button onclick="startSession()">Start Now</button>
+    </div>
+
+    <div class="container hidden" id="formScreen">
+      <form id="quizForm">
+        <h2>Vos préférences</h2>
+        <div class="questions-form">
+          <div class="question">
+            <label
+              >1. Quelle est la date exacte de notre première rencontre ?</label
+            >
+            <input type="text" name="question1" />
+          </div>
+          <div class="question">
+            <label>2. Où avons-nous eu notre premier baiser ?</label>
+            <input type="text" name="question2" />
+          </div>
+          <div class="question">
+            <label
+              >3. Qu'est-ce que tu portais lors de notre premier rendez-vous
+              ?</label
+            >
+            <input type="text" name="question3" />
+          </div>
+          <div class="question">
+            <label
+              >4. Quel plat avons-nous mangé ensemble la première fois ?</label
+            >
+            <input type="text" name="question4" />
+          </div>
+          <div class="question">
+            <label>5. Quelle est sa couleur préférée ?</label>
+            <input type="text" name="question5" />
+          </div>
+          <div class="question">
+            <label>6. Quel est son parfum préféré (nom exact) ?</label>
+            <input type="text" name="question6" />
+          </div>
+          <div class="question">
+            <label
+              >7. Quelle est sa boisson favorite (exacte : Coca zéro,
+              cappuccino...) ?</label
+            >
+            <input type="text" name="question7" />
+          </div>
+          <div class="question">
+            <label>8. Quel est son fast-food préféré ?</label>
+            <input type="text" name="question8" />
+          </div>
+          <div class="question">
+            <label>9. Quel fruit déteste-t-il/elle ?</label>
+            <input type="text" name="question9" />
+          </div>
+          <div class="question">
+            <label
+              >10. Quelle chanson écoute-t-il/elle en boucle en ce moment
+              ?</label
+            >
+            <input type="text" name="question10" />
+          </div>
+          <div class="question">
+            <label>11. Quel est son plat réconfort quand ça ne va pas ?</label>
+            <input type="text" name="question11" />
+          </div>
+          <div class="question">
+            <label
+              >12. À quelle heure se lève-t-il/elle habituellement le week-end
+              ?</label
+            >
+            <input type="text" name="question12" />
+          </div>
+          <div class="question">
+            <label>13. Quelle est sa position pour dormir ?</label>
+            <input type="text" name="question13" />
+          </div>
+          <div class="question">
+            <label>14. Est-il/elle plutôt "bain" ou "douche" ?</label>
+            <input type="text" name="question14" />
+          </div>
+          <div class="question">
+            <label>15. Thé ou café ?</label>
+            <input type="text" name="question15" />
+          </div>
+          <div class="question">
+            <label>16. Gaucher(e) ou droitier(e) ?</label>
+            <input type="text" name="question16" />
+          </div>
+          <div class="question">
+            <label>17. Quel a été son tout premier boulot ?</label>
+            <input type="text" name="question17" />
+          </div>
+          <div class="question">
+            <label>18. Quelle matière détestait-il/elle à l'école ?</label>
+            <input type="text" name="question18" />
+          </div>
+          <div class="question">
+            <label
+              >19. Quel est le métier qu'il/elle rêvait de faire enfant ?</label
+            >
+            <input type="text" name="question19" />
+          </div>
+          <div class="question">
+            <label
+              >20. Quel est son plus grand objectif professionnel aujourd'hui
+              ?</label
+            >
+            <input type="text" name="question20" />
+          </div>
+          <div class="question">
+            <label>21. Quel est son plus grand talent caché ?</label>
+            <input type="text" name="question21" />
+          </div>
+          <div class="question">
+            <label>22. De quoi a-t-il/elle le plus peur ?</label>
+            <input type="text" name="question22" />
+          </div>
+          <div class="question">
+            <label>23. Quelle est la chose qui l'énerve instantanément ?</label>
+            <input type="text" name="question23" />
+          </div>
+          <div class="question">
+            <label>24. Qu'est-ce qui le/la rend heureux(se) à coup sûr ?</label>
+            <input type="text" name="question24" />
+          </div>
+          <div class="question">
+            <label>25. Introverti(e) ou extraverti(e) ?</label>
+            <input type="text" name="question25" />
+          </div>
+          <div class="question">
+            <label>26. Est-il/elle plutôt rancunier(e) ou indulgent(e) ?</label>
+            <input type="text" name="question26" />
+          </div>
+          <div class="question">
+            <label
+              >27. Quel est son langage de l'amour (touchers, cadeaux, mots,
+              services, temps) ?</label
+            >
+            <input type="text" name="question27" />
+          </div>
+          <div class="question">
+            <label>28. Quelle est la chose qu'il/elle préfère chez toi ?</label>
+            <input type="text" name="question28" />
+          </div>
+          <div class="question">
+            <label>29. Quel surnom t'a-t-il/elle déjà donné ?</label>
+            <input type="text" name="question29" />
+          </div>
+          <div class="question">
+            <label>30. Où aimerait-il/elle faire sa lune de miel ?</label>
+            <input type="text" name="question30" />
+          </div>
+        </div>
+        <button type="submit">Generate Link</button>
+      </form>
+    </div>
+
+    <div class="container hidden" id="linkScreen">
+      <h2>Share This Link</h2>
+      <p
+        style="
+          text-align: center;
+          margin-bottom: 1.5rem;
+          color: var(--text-light);
+        ">
+        Send to your partner to see how well you match!
+      </p>
+      <input type="text" id="partnerLink" readonly />
+      <button onclick="copyLink()">Copy Link</button>
+    </div>
+
+    <div class="container hidden" id="partnerFormScreen">
+      <form id="partnerForm">
+        <h2>Les préférences de votre partenaire</h2>
+        <div class="questions-form">
+          <div class="question">
+            <label
+              >1. Quelle est la date exacte de notre première rencontre ?</label
+            >
+            <input type="text" name="question1" />
+          </div>
+          <div class="question">
+            <label>2. Où avons-nous eu notre premier baiser ?</label>
+            <input type="text" name="question2" />
+          </div>
+          <div class="question">
+            <label
+              >3. Qu'est-ce que tu portais lors de notre premier rendez-vous
+              ?</label
+            >
+            <input type="text" name="question3" />
+          </div>
+          <div class="question">
+            <label
+              >4. Quel plat avons-nous mangé ensemble la première fois ?</label
+            >
+            <input type="text" name="question4" />
+          </div>
+          <div class="question">
+            <label>5. Quelle est sa couleur préférée ?</label>
+            <input type="text" name="question5" />
+          </div>
+          <div class="question">
+            <label>6. Quel est son parfum préféré (nom exact) ?</label>
+            <input type="text" name="question6" />
+          </div>
+          <div class="question">
+            <label
+              >7. Quelle est sa boisson favorite (exacte : Coca zéro,
+              cappuccino...) ?</label
+            >
+            <input type="text" name="question7" />
+          </div>
+          <div class="question">
+            <label>8. Quel est son fast-food préféré ?</label>
+            <input type="text" name="question8" />
+          </div>
+          <div class="question">
+            <label>9. Quel fruit déteste-t-il/elle ?</label>
+            <input type="text" name="question9" />
+          </div>
+          <div class="question">
+            <label
+              >10. Quelle chanson écoute-t-il/elle en boucle en ce moment
+              ?</label
+            >
+            <input type="text" name="question10" />
+          </div>
+          <div class="question">
+            <label>11. Quel est son plat réconfort quand ça ne va pas ?</label>
+            <input type="text" name="question11" />
+          </div>
+          <div class="question">
+            <label
+              >12. À quelle heure se lève-t-il/elle habituellement le week-end
+              ?</label
+            >
+            <input type="text" name="question12" />
+          </div>
+          <div class="question">
+            <label>13. Quelle est sa position pour dormir ?</label>
+            <input type="text" name="question13" />
+          </div>
+          <div class="question">
+            <label>14. Est-il/elle plutôt "bain" ou "douche" ?</label>
+            <input type="text" name="question14" />
+          </div>
+          <div class="question">
+            <label>15. Thé ou café ?</label>
+            <input type="text" name="question15" />
+          </div>
+          <div class="question">
+            <label>16. Gaucher(e) ou droitier(e) ?</label>
+            <input type="text" name="question16" />
+          </div>
+          <div class="question">
+            <label>17. Quel a été son tout premier boulot ?</label>
+            <input type="text" name="question17" />
+          </div>
+          <div class="question">
+            <label>18. Quelle matière détestait-il/elle à l'école ?</label>
+            <input type="text" name="question18" />
+          </div>
+          <div class="question">
+            <label
+              >19. Quel est le métier qu'il/elle rêvait de faire enfant ?</label
+            >
+            <input type="text" name="question19" />
+          </div>
+          <div class="question">
+            <label
+              >20. Quel est son plus grand objectif professionnel aujourd'hui
+              ?</label
+            >
+            <input type="text" name="question20" />
+          </div>
+          <div class="question">
+            <label>21. Quel est son plus grand talent caché ?</label>
+            <input type="text" name="question21" />
+          </div>
+          <div class="question">
+            <label>22. De quoi a-t-il/elle le plus peur ?</label>
+            <input type="text" name="question22" />
+          </div>
+          <div class="question">
+            <label>23. Quelle est la chose qui l'énerve instantanément ?</label>
+            <input type="text" name="question23" />
+          </div>
+          <div class="question">
+            <label>24. Qu'est-ce qui le/la rend heureux(se) à coup sûr ?</label>
+            <input type="text" name="question24" />
+          </div>
+          <div class="question">
+            <label>25. Introverti(e) ou extraverti(e) ?</label>
+            <input type="text" name="question25" />
+          </div>
+          <div class="question">
+            <label>26. Est-il/elle plutôt rancunier(e) ou indulgent(e) ?</label>
+            <input type="text" name="question26" />
+          </div>
+          <div class="question">
+            <label
+              >27. Quel est son langage de l'amour (touchers, cadeaux, mots,
+              services, temps) ?</label
+            >
+            <input type="text" name="question27" />
+          </div>
+          <div class="question">
+            <label>28. Quelle est la chose qu'il/elle préfère chez toi ?</label>
+            <input type="text" name="question28" />
+          </div>
+          <div class="question">
+            <label>29. Quel surnom t'a-t-il/elle déjà donné ?</label>
+            <input type="text" name="question29" />
+          </div>
+          <div class="question">
+            <label>30. Où aimerait-il/elle faire sa lune de miel ?</label>
+            <input type="text" name="question30" />
+          </div>
+        </div>
+        <button type="submit">See Results</button>
+      </form>
+    </div>
+
+    <div class="container hidden" id="resultsScreen">
+      <h2>Score Dashboard</h2>
+      <div class="dashboard" id="results"></div>
+      <button onclick="startOver()">Start Over</button>
+    </div>
+    <script src="./main.js"></script>
+  </body>
+</html>
